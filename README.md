@@ -136,3 +136,8 @@ These images are signed with sisgstore's [cosign](https://docs.sigstore.dev/cosi
     cosign verify --key cosign.pub ghcr.io/trofosila/personal-os
 
 If you're forking this repo, the uBlue website has [instructions](https://ublue.it/making-your-own/) for setting up signing properly.
+
+## Rebase
+ ```bash
+ rpm-ostree rebase ostree-unverified-registry:ghcr.io/trofosila/personal-os:latest
+ ```
