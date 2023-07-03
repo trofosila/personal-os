@@ -76,6 +76,8 @@ rpm:
     - firefox-langpacks
     - gnome-system-monitor
     - gnome-tour
+    - htop
+    - nvtop
 
 # Configuration for the "first boot" experience, which is available after login.
 firstboot:
