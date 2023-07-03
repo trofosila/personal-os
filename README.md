@@ -136,3 +136,8 @@ These images are signed with sisgstore's [cosign](https://docs.sigstore.dev/cosi
     cosign verify --key cosign.pub ghcr.io/trofosila/personal-os
 
 If you're forking this repo, the uBlue website has [instructions](https://ublue.it/making-your-own/) for setting up signing properly.
+
+## Cleanup
+```
+flatpak remove org.gnome.font-viewer org.gnome.clocks org.gnome.baobab org.gnome.Weather org.gnome.Maps org.gnome.Contacts org.gnome.Cheese org.gnome.Characters org.gnome.Calendar org.gnome.Calculator org.fedoraproject.MediaWriter org.gnome.Connections
+```
