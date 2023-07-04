@@ -100,3 +100,4 @@ firstboot:
     - com.github.tchx84.Flatseal
     - com.github.IsmaelMartinez.teams_for_linux
     - com.slack.Slack
+    - com.mattjakeman.ExtensionManager
