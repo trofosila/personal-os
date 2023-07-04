@@ -157,3 +157,20 @@ flatpak remote-add --if-not-exists --user flathub https://flathub.org/repo/flath
 ```
 gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer']"
 ```
+### Desktop files
+```
+echo "[Desktop Entry]
+Name=Slack
+Comment=Slack Desktop
+GenericName=Slack Client for Linux
+Exec=/usr/bin/flatpak run com.slack.Slack --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform=wayland %U
+Icon=com.slack.Slack
+Type=Application
+#StartupNotify=true
+Categories=GNOME;GTK;Network;InstantMessaging;
+MimeType=x-scheme-handler/slack;
+X-Desktop-File-Install-Version=0.26
+StartupWMClass=Slack
+#X-Flatpak-RenamedFrom=com.slack.Slack.desktop;
+X-Flatpak=com.slack.Slack" > ~/.local/share/applications/com.slack.Slack.desktop
+```
