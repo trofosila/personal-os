@@ -106,3 +106,4 @@ firstboot:
     - org.freedesktop.Platform.ffmpeg-full
     - org.freedesktop.Platform.VaInfo
     - org.gnome.SimpleScan
+    - org.gnome.Logs
