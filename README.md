@@ -108,8 +108,10 @@ Run the following commands when you're logged into the operating system, to merg
 
 ```sh
 touch ~/.justfile
-cat /usr/share/ublue-os/just/main.just >> ~/.justfile
+cat /usr/share/ublue-os/just/main.just > ~/.justfile
+cat /usr/share/ublue-os/just/nvidia.just > ~/.justfile
 cat /usr/share/ublue-os/just/custom.just >> ~/.justfile
+sed -i 's/!include/#!include/g' .justfile
 ```
 
 After doing that, you'll be able to run the following commands:
