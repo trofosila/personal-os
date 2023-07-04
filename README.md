@@ -173,4 +173,6 @@ X-Desktop-File-Install-Version=0.26
 StartupWMClass=Slack
 #X-Flatpak-RenamedFrom=com.slack.Slack.desktop;
 X-Flatpak=com.slack.Slack" > ~/.local/share/applications/com.slack.Slack.desktop
+
+flatpak override --user --socket=wayland com.slack.Slack
 ```
