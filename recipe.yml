@@ -103,7 +103,7 @@ firstboot:
     - com.github.IsmaelMartinez.teams_for_linux
     - com.slack.Slack
     - com.mattjakeman.ExtensionManager
-    - org.freedesktop.Platform.ffmpeg-full
-    - org.freedesktop.Platform.VaInfo
+    - org.freedesktop.Platform.ffmpeg-full/x86_64/22.08
+    - org.freedesktop.Platform.VaInfo/x86_64/22.08
     - org.gnome.SimpleScan
     - org.gnome.Logs
