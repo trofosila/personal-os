@@ -101,3 +101,4 @@ firstboot:
     - com.github.IsmaelMartinez.teams_for_linux
     - com.slack.Slack
     - com.mattjakeman.ExtensionManager
+    - org.freedesktop.Platform.ffmpeg-full
