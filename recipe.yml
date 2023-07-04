@@ -109,3 +109,5 @@ firstboot:
     - org.freedesktop.Platform.VaInfo/x86_64/22.08
     - org.gnome.SimpleScan
     - org.gnome.Logs
+    - org.gnome.eog
+    - org.gnome.Evince
