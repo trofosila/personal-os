@@ -175,4 +175,6 @@ StartupWMClass=Slack
 X-Flatpak=com.slack.Slack" > ~/.local/share/applications/com.slack.Slack.desktop
 
 flatpak override --user --socket=wayland com.slack.Slack
+
+cp /usr/share/icons/Bibata* /home/trofo/.icons
 ```
