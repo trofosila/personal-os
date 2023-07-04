@@ -141,3 +141,12 @@ If you're forking this repo, the uBlue website has [instructions](https://ublue.
 ```
 flatpak remove org.gnome.font-viewer org.gnome.clocks org.gnome.baobab org.gnome.Weather org.gnome.Maps org.gnome.Contacts org.gnome.Cheese org.gnome.Characters org.gnome.Calendar org.gnome.Calculator org.fedoraproject.MediaWriter org.gnome.Connections
 ```
+
+## Initial setup
+```
+flatpak remote-delete --system --force fedora
+flatpak remote-delete --user --force fedora
+flatpak remove --system --noninteractive --all
+flatpak remote-add --if-not-exists --system flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak remote-add --if-not-exists --user flathub https://flathub.org/repo/flathub.flatpakrepo
+```
