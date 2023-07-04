@@ -176,6 +176,20 @@ X-Flatpak=com.slack.Slack" > ~/.local/share/applications/com.slack.Slack.desktop
 
 flatpak override --user --socket=wayland com.slack.Slack
 
+echo "[Desktop Entry]
+Name=Teams for Linux
+Exec=/usr/bin/flatpak run com.github.IsmaelMartinez.teams_for_linux --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform=wayland
+Terminal=false
+Type=Application
+Icon=com.github.IsmaelMartinez.teams_for_linux
+StartupWMClass=teams-for-linux
+Comment=Unofficial Microsoft Teams client for Linux using Electron. It uses the Web App and wraps it as a standalone application using Electron.
+MimeType=x-scheme-handler/msteams;
+Categories=Chat;Network;Office;
+X-Desktop-File-Install-Version=0.26
+X-Flatpak-RenamedFrom=teams-for-linux.desktop;
+X-Flatpak=com.github.IsmaelMartinez.teams_for_linux" > ~/.local/share/applications/com.github.IsmaelMartinez.teams_for_linux.desktop
+
 mkdir -p ~/.icons
 cp -r /usr/share/icons/Bibata* ~/.icons
 flatpak --user override --filesystem=/home/$USER/.icons/:ro
