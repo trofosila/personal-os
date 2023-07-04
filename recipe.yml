@@ -111,3 +111,4 @@ firstboot:
     - org.gnome.Logs
     - org.gnome.eog
     - org.gnome.Evince
+    - org.gnome.NautilusPreviewer
