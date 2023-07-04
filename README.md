@@ -213,7 +213,7 @@ rpm-ostree kargs --append=amd_pstate=passive
 ```
 To check: `watch -n1 "grep \"^[c]pu MHz\" /proc/cpuinfo"`
 
-### Console fonts (after terminu font is installed)
+### Console fonts (after terminus font is installed)
 ```
 sudo sed -i 's/eurlatgr/ter-v28b/g' /etc/vconsole.conf
 ```
