@@ -98,3 +98,5 @@ firstboot:
     # - org.kde.krita
     - org.mozilla.firefox
     - com.github.tchx84.Flatseal
+    - com.github.IsmaelMartinez.teams_for_linux
+    - com.slack.Slack
