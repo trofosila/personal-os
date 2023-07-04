@@ -178,4 +178,5 @@ flatpak override --user --socket=wayland com.slack.Slack
 
 mkdir -p ~/.icons
 cp -r /usr/share/icons/Bibata* ~/.icons
+flatpak --user override --filesystem=/home/$USER/.icons/:ro
 ```
