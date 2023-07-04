@@ -104,3 +104,4 @@ firstboot:
     - com.slack.Slack
     - com.mattjakeman.ExtensionManager
     - org.freedesktop.Platform.ffmpeg-full
+    - org.freedesktop.Platform.VaInfo
