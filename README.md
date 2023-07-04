@@ -143,10 +143,15 @@ flatpak remove org.gnome.font-viewer org.gnome.clocks org.gnome.baobab org.gnome
 ```
 
 ## Initial setup
+### Flathub
 ```
 flatpak remote-delete --system --force fedora
 flatpak remote-delete --user --force fedora
 flatpak remove --system --noninteractive --all
 flatpak remote-add --if-not-exists --system flathub https://flathub.org/repo/flathub.flatpakrepo
 flatpak remote-add --if-not-exists --user flathub https://flathub.org/repo/flathub.flatpakrepo
+```
+### Fractional scalling
+```
+gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer']"
 ```
