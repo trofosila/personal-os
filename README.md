@@ -176,6 +176,14 @@ X-Flatpak=com.slack.Slack" > ~/.local/share/applications/com.slack.Slack.desktop
 
 flatpak override --user --socket=wayland com.slack.Slack
 
+flatpak override \
+    --user \
+    --filesystem=host-os \
+    --env=LIBVA_DRIVER_NAME=nvidia \
+    --env=LIBVA_DRIVERS_PATH=/run/host/usr/lib64/dri \
+    --env=NVD_BACKEND=direct \
+    org.freedesktop.Platform.VaInfo
+
 echo "[Desktop Entry]
 Name=Teams for Linux
 Exec=/usr/bin/flatpak run com.github.IsmaelMartinez.teams_for_linux --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform=wayland
