@@ -157,7 +157,7 @@ flatpak remote-add --if-not-exists --user flathub https://flathub.org/repo/flath
 ```
 gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer']"
 ```
-### Desktop files
+### Flatpak fixes
 ```
 echo "[Desktop Entry]
 Name=Slack
@@ -203,9 +203,6 @@ cp -r /usr/share/icons/Bibata* ~/.icons
 flatpak --user override --filesystem=/home/$USER/.icons/:ro
 flatpak --user override --env=XCURSOR_THEME=Bibata-Modern-Classic
 ```
-
-### Video acceleration
-In Firefox, except everything in documentation, in `about:config`, set `widget.dmabuf.force-enabled` to `true`.
 
 ### AMD P-State
 ```
