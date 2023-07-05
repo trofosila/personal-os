@@ -112,3 +112,4 @@ firstboot:
     - org.gnome.eog
     - org.gnome.Evince
     - org.gnome.NautilusPreviewer
+    - com.visualstudio.code
