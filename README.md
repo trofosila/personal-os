@@ -211,7 +211,9 @@ sudo sed -i 's/eurlatgr/ter-v28b/g' /etc/vconsole.conf
 ```
 
 ### VS Code
-```
-alias code="flatpak run com.visualstudio.code --enable-ozone --ozone-platform=wayland "
-```
+In `.bashrc` add `alias code="flatpak run com.visualstudio.code --enable-ozone --ozone-platform=wayland "`  
+
 Set `Title Bar Style` to `custom` (in VS Code `Settings`).
+```
+flatpak override --user --socket=wayland com.visualstudio.code
+```
