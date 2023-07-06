@@ -112,5 +112,5 @@ firstboot:
     - org.gnome.NautilusPreviewer
     - com.visualstudio.code
     - com.discordapp.Discord
-    - org.freedesktop.Platform.VulkanLayer.MangoHud
+    - org.freedesktop.Platform.VulkanLayer.MangoHud/x86_64/22.08
     - com.valvesoftware.Steam
