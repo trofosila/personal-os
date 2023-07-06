@@ -10,6 +10,8 @@ setup-flatpaks:
       flatpak install --user --noninteractive flathub $pkg; \
   done
 
+# Include some of your custom scripts here!
+
 # Enable AMD P-State CPU Performance Scaling Driver
 amd-p-state-enable:
   rpm-ostree kargs --append-if-missing=amd_pstate=passive
