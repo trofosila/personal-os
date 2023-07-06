@@ -28,4 +28,4 @@ justfile-update:
   cat /usr/share/ublue-os/just/main.just > ~/.justfile
   cat /usr/share/ublue-os/just/nvidia.just >> ~/.justfile
   cat /usr/share/ublue-os/just/custom.just >> ~/.justfile
-  sed -i -z 's/!include/#!include/g' .justfile
+  sed -i 's/^!include/#!include/g' .justfile
