@@ -113,3 +113,4 @@ firstboot:
     - org.gnome.Evince
     - org.gnome.NautilusPreviewer
     - com.visualstudio.code
+    - com.discordapp.Discord
