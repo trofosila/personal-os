@@ -71,6 +71,7 @@ rpm:
     - levien-inconsolata-fonts
     - libgtop2-devel
     - lm_sensors
+    - binfmt-support # https://github.com/89luca89/distrobox/blob/main/docs/useful_tips.md#using-a-different-architecture
 
   # These RPMs will be removed from the system image. This step happens during
   # image build, BEFORE installing custom RPMs (from the "rpm.install" category).
