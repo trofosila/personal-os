@@ -1,7 +1,7 @@
 !include /usr/share/ublue-os/just/bling.just
 
-# install all flatpaks defined in recipe.yml
-setup-flatpaks:
+# Install all flatpaks defined in recipe.yml
+flatpaks-setup:
   #!/usr/bin/env bash
   echo 'Installing flatpaks from the ublue recipe ...'
   flatpaks=$(yq -- '.firstboot.flatpaks[]' "/usr/share/ublue-os/recipe.yml")
@@ -23,7 +23,7 @@ amd-p-state-test:
   watch -n1 "grep \"^[c]pu MHz\" /proc/cpuinfo"
 
 # Sync changes to .justfile
-justfile-update
+justfile-update:
   touch ~/.justfile
   cat /usr/share/ublue-os/just/main.just > ~/.justfile
   cat /usr/share/ublue-os/just/nvidia.just >> ~/.justfile
