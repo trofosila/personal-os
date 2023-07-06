@@ -10,4 +10,12 @@ setup-flatpaks:
       flatpak install --user --noninteractive flathub $pkg; \
   done
 
-# Include some of your custom scripts here! 
+# Include some of your custom scripts here!
+enable-amd-p-state:
+  rpm-ostree kargs --append-if-missing=amd_pstate=passive
+
+disable-amd-p-state:
+  rpm-ostree kargs --delete=amd_pstate
+
+test-amd-p-state:
+  watch -n1 "grep \"^[c]pu MHz\" /proc/cpuinfo"
