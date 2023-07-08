@@ -83,6 +83,7 @@ rpm:
     - gnome-tour
     - htop
     - nvtop
+    - podman
 
 # Configuration for the "first boot" experience, which is available after login.
 firstboot:
