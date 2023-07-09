@@ -55,3 +55,6 @@ aws-sam-install:
 # Install rootless Docker https://docs.docker.com/engine/security/rootless/
 docker-install:
   curl -fsSL https://get.docker.com/rootless | sh
+  echo "DOCKER_HOST=unix:///run/user/$UID/docker.sock" >> ~/.bashrc
+  systemctl --user start docker
+  systemctl --user enable docker
