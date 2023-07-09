@@ -34,17 +34,24 @@ justfile-update:
 
 # Install rootless AWS CLI https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
 aws-cli-install:
-  cd /tmp
   curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
   unzip awscliv2.zip
-  ./aws/install -i /usr/local/aws-cli -b /usr/local/bin
+  mkdir -p ~/.local/bin
+  ./aws/install -i ~/.local/aws-cli -b ~/.local/bin
   aws --version
+  rm awscliv2.zip
+  rm -r aws
 
 # Install rootless AWS SAM CLI https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/install-sam-cli.html
 aws-sam-install:
-  cd /tmp
   curl -L "https://github.com/aws/aws-sam-cli/releases/latest/download/aws-sam-cli-linux-x86_64.zip" -o aws-sam-cli-linux-x86_64.zip
   unzip aws-sam-cli-linux-x86_64.zip -d sam-installation
-  ./sam-installation/install -i /usr/local/aws-sam-cli -b /usr/local/bin
+  mkdir -p ~/.local/bin
+  ./sam-installation/install -i ~/.local/aws-sam-cli -b ~/.local/bin
   sam --version
+  rm aws-sam-cli-linux-x86_64.zip
+  rm -r sam-installation
 
+# Install rootless Docker https://docs.docker.com/engine/security/rootless/
+docker-install:
+  curl -fsSL https://get.docker.com/rootless | sh
