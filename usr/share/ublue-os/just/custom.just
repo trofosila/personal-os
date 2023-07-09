@@ -31,3 +31,20 @@ justfile-update:
   cat /usr/share/ublue-os/just/nvidia.just >> ~/.justfile
   cat /usr/share/ublue-os/just/custom.just >> ~/.justfile
   sed -i 's/^!include/#!include/g' .justfile
+
+# Install rootless AWS CLI https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+aws-cli-install:
+  cd /tmp
+  curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+  unzip awscliv2.zip
+  ./aws/install -i /usr/local/aws-cli -b /usr/local/bin
+  aws --version
+
+# Install rootless AWS SAM CLI https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/install-sam-cli.html
+aws-sam-install:
+  cd /tmp
+  curl -L "https://github.com/aws/aws-sam-cli/releases/latest/download/aws-sam-cli-linux-x86_64.zip" -o aws-sam-cli-linux-x86_64.zip
+  unzip aws-sam-cli-linux-x86_64.zip -d sam-installation
+  ./sam-installation/install -i /usr/local/aws-sam-cli -b /usr/local/bin
+  sam --version
+
