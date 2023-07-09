@@ -85,7 +85,6 @@ rpm:
     - toolbox
     - podman
     - podman-compose
-    - containerd
 
 # Configuration for the "first boot" experience, which is available after login.
 firstboot:
