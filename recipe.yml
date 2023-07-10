@@ -82,10 +82,10 @@ rpm:
     - gnome-tour
     - htop
     - nvtop
-    - toolbox
-    - podman
-    - podman-compose
-    - distrobox
+    # - toolbox
+    # - podman
+    # - podman-compose
+    # - distrobox
 
 # Configuration for the "first boot" experience, which is available after login.
 firstboot:
